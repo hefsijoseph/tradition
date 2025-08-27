@@ -1,0 +1,15 @@
+@use '../utils//variables' as *;
+@use '../utils/mixins' as *;
+
+
+nav{
+    @include flex;
+    ul{
+        @include flex;
+    }
+    .button1{
+        @include button1;
+    }
+}
+
+

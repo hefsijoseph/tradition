@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+}
+
+@mixin bg-button{
+    background: $bg-color;
+    border: 1px solid $border-color;
+}
+@mixin button1{
+    width: 160px;
+    height: 60px;
+    background: white;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+}
+
+@mixin button2{
+    width: 250px;
+    height: 60px;
+   @include bg-button;
+    border-radius: 5px;
+}
+
+@mixin button3{
+    width: 60px;
+    height: 60px;
+    @include bg-button;
+    border-radius: 70%;
+}
+
+@mixin centerButton{
+    position: absolute;
+    top: 25%;
+    // z-index: 9;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}

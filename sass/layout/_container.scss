@@ -1,0 +1,398 @@
+@use '../utils/variables' as *;
+@use '../utils//functions' as *;
+@use '../utils/mixins' as *;
+
+
+.container{
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+header{
+padding: 10px;
+    // box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+.carousel{
+    position: relative;
+    padding-top:10px;
+    width: 100%;
+    height: 1400px; // you can change later
+    margin: 0 auto;
+    // background: #000;
+
+    #{&}__image{
+        // display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #{&}__button{
+     @include centerButton;
+    }
+
+ 
+
+    #{&}__button--left{
+        left:30px;
+        :hover{
+            background: rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+    }
+
+    #{&}__button--right{
+        right:30px;
+        :hover{
+            background: rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+    }
+
+    #{&}__track-container{
+        // background: lightgreen;
+        padding: 0px; //you can change later
+        height: 50%;  // you can change later
+        position: relative;
+        z-index: -1;
+        overflow: hidden;
+
+    
+    }
+    #{&}__track{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform 250ms ease-in;
+    }
+    
+    #{&}__slide{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #{&}__nav{
+        // background: pink;
+        display: flex;
+        justify-content: center;
+    }
+
+    #{&}__indicator{
+        border: 0;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: rgba(0,0,0,0.3);
+        margin: 15px;
+        cursor: pointer;
+    }
+
+    #{&}__nav{
+        .current-slide{
+            background: rgba(0,0,0,0.78);
+         }
+    }
+ 
+
+ .is-hidden{
+    display: none;
+ }
+
+ .hero-section{
+    // margin-top: 40px;
+    margin-left:20px;
+    @include grid;
+
+    h1{
+        font-size:70px;
+        max-width: 90%;
+    }
+
+    p{
+        margin-top: 20px;
+        line-height: 1.5;
+        max-width: 76%;
+    }
+    .button2{
+        @include button2;
+       a{
+            text-decoration: none;
+            color:$primary-color;
+        }
+    }
+
+    .button3{
+        @include button3;
+        a{
+            text-decoration: none;
+            color:$primary-color;
+        }
+    }
+
+}
+
+
+.hero-section{
+    margin-top: 100px;
+    margin-left:20px;
+    @include grid;
+
+    h1{
+        font-size:70px;
+        max-width: 90%;
+    }
+
+    p{
+        margin-top: 30px;
+        line-height: 1.5;
+        max-width: 650px;
+    }
+    .button2{
+        @include button2;
+    }
+
+    .button3{
+        @include button3;
+    }
+
+}
+
+.section2{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right:20px;
+    background:$bg-color;
+    height: 70vh;
+    @include grid;
+    gap: 50px;
+
+    .div1{
+
+      img{
+        width: 100%;
+        height:90%;
+        margin:20px;
+      }
+    }
+    
+   .rotated-div{
+
+
+    .div-one{
+        background: white;
+        margin-top: 80px;
+        // margin-left:1000px;
+        margin-right: -30px;
+        padding: 20px;
+        transform: rotate(8deg);
+        margin-left: 130px;
+        border-radius:10px; 
+        width: 700px; 
+        height:150px;
+
+        .div1{
+            margin-left: 10px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+
+            .button1{
+                border: none;
+                background: transparent;
+
+                .div-icon{
+                    margin-left:30px;
+                    width: 70px;
+                    height: 35px;
+                    background:#e25809;
+                    border-radius: 30px;
+                    position: relative;
+
+                    .kid-div-icon{
+                        width: 30px;
+                        height:30px;
+                        background: white;
+                        position: absolute;
+                        right:3px;
+                        top:1px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .button2{
+                @extend .button1;
+            }
+        }
+    }
+
+    .div-two{
+
+
+      .advanced{
+        width:700px;
+        height:240px;
+        margin-top:5px;
+        border-radius: 10px;
+        margin-right:60px;
+        transform: rotate(8deg);
+        background-color: white;
+        border: 1px solid lightgray;
+
+        .advanced-child{
+            margin-top: 30px;
+            padding: 30px;
+            border-bottom: 1px solid lightgray;
+            margin-left:30px; margin-bottom: 20px;
+            margin-right: 30px;
+            display: flex;
+            justify-content: space-around;
+
+            .button1{
+                border: none;
+                background: transparent;
+            }
+        }
+        .last-div{
+            .btn1{
+                background: none; 
+                border: none;
+            span{
+                margin-bottom: 200px;
+            }
+
+                .div-icon{
+                    margin-left:30px;
+                    width: 70px;
+                    height:35px;
+                    background:#e25809;
+                    border-radius: 30px;
+                    position: relative;
+
+                   .kid-div-icon{
+                    width: 30px;
+                    height:30px; 
+                    background: white;
+                    position: absolute;
+                    right:3px;
+                    top:1px;
+                    border-radius: 50%;
+
+                    }
+                }
+            }
+            .learn-more{
+                margin-left: 310px;
+            }
+
+        }
+      }
+    }
+   }
+   
+}
+
+
+.section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 100px;
+    height: 25vh;
+
+    .div3{
+        border-right:4px solid #ddd;
+    }
+    .section3-div{
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 10px;
+
+        .div01{
+            margin-right: 60px;
+        }
+        .div-one{
+            margin-right: -40px;
+        }
+        .div1{
+            // margin-left: 30px;
+            // padding-right: 30px;
+            .div-1{
+                margin-left: 10px;
+            }
+
+        
+            .div1-one{
+                width: 180px;
+                height: 120px;
+                background: $bg-color;
+                border-radius: 10px;
+                position: relative;
+
+                .center{
+                    position: absolute;
+                    top: 30%;
+                    left: 35%;
+                }
+            }
+            .div-2{}
+            .div1-two{
+                margin-top: 10px;
+                width: 160px;
+                height: 20px;
+                background: $bg-color;
+                margin: 10px auto;
+                border-radius: 10px;
+           
+            }
+            .div1-three{
+                margin-top: 10px;
+                width: 140px;
+                height: 10px;
+                background: $bg-color;
+                margin: 10px auto;
+                border-radius: 10px;
+            }
+        }
+
+        .div-2{
+            margin-left: -130px;
+        }
+        .div-02{
+            margin-right: 100px;
+
+            h3{
+                padding-bottom:20px;
+                font-size:1.7rem;
+            }
+        }
+        .div-two{
+            // border-right: 2px solid $border-color;
+
+            h3{
+                padding-bottom:20px;
+                font-size:1.7rem;
+            }
+        }
+    }
+
+  
+    .div2{
+        margin-left: 30px;
+    }
+}
+}
+
+
+
+
+
+
+

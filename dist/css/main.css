@@ -1,0 +1,366 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .button1 {
+  width: 160px;
+  height: 60px;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e25809;
+}
+
+ul li {
+  list-style: none;
+  padding: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: #e25809;
+  padding: 0.5rem;
+}
+ul li a:hover {
+  border-bottom: 5px solid #e25809;
+}
+
+.container {
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+header {
+  padding: 10px;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 10px;
+  width: 100%;
+  height: 1400px;
+  margin: 0 auto;
+}
+.carousel .carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel .carousel__button {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.carousel .carousel__button--left {
+  left: 30px;
+}
+.carousel .carousel__button--left :hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.carousel .carousel__button--right {
+  right: 30px;
+}
+.carousel .carousel__button--right :hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.carousel .carousel__track-container {
+  padding: 0px;
+  height: 50%;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+.carousel .carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+.carousel .carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel .carousel__nav {
+  display: flex;
+  justify-content: center;
+}
+.carousel .carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 15px;
+  cursor: pointer;
+}
+.carousel .carousel__nav .current-slide {
+  background: rgba(0, 0, 0, 0.78);
+}
+.carousel .is-hidden {
+  display: none;
+}
+.carousel .hero-section {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+}
+.carousel .hero-section h1 {
+  font-size: 70px;
+  max-width: 90%;
+}
+.carousel .hero-section p {
+  margin-top: 20px;
+  line-height: 1.5;
+  max-width: 76%;
+}
+.carousel .hero-section .button2 {
+  width: 250px;
+  height: 60px;
+  background: #f7f6ee;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.carousel .hero-section .button2 a {
+  text-decoration: none;
+  color: #e25809;
+}
+.carousel .hero-section .button3 {
+  width: 60px;
+  height: 60px;
+  background: #f7f6ee;
+  border: 1px solid lightgray;
+  border-radius: 70%;
+}
+.carousel .hero-section .button3 a {
+  text-decoration: none;
+  color: #e25809;
+}
+.carousel .hero-section {
+  margin-top: 100px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+}
+.carousel .hero-section h1 {
+  font-size: 70px;
+  max-width: 90%;
+}
+.carousel .hero-section p {
+  margin-top: 30px;
+  line-height: 1.5;
+  max-width: 650px;
+}
+.carousel .hero-section .button2 {
+  width: 250px;
+  height: 60px;
+  background: #f7f6ee;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.carousel .hero-section .button3 {
+  width: 60px;
+  height: 60px;
+  background: #f7f6ee;
+  border: 1px solid lightgray;
+  border-radius: 70%;
+}
+.carousel .section2 {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #f7f6ee;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 50px;
+}
+.carousel .section2 .div1 img {
+  width: 100%;
+  height: 90%;
+  margin: 20px;
+}
+.carousel .section2 .rotated-div .div-one {
+  background: white;
+  margin-top: 80px;
+  margin-right: -30px;
+  padding: 20px;
+  transform: rotate(8deg);
+  margin-left: 130px;
+  border-radius: 10px;
+  width: 700px;
+  height: 150px;
+}
+.carousel .section2 .rotated-div .div-one .div1 {
+  margin-left: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.carousel .section2 .rotated-div .div-one .div1 .button1, .carousel .section2 .rotated-div .div-one .div1 .button2 {
+  border: none;
+  background: transparent;
+}
+.carousel .section2 .rotated-div .div-one .div1 .button1 .div-icon, .carousel .section2 .rotated-div .div-one .div1 .button2 .div-icon {
+  margin-left: 30px;
+  width: 70px;
+  height: 35px;
+  background: #e25809;
+  border-radius: 30px;
+  position: relative;
+}
+.carousel .section2 .rotated-div .div-one .div1 .button1 .div-icon .kid-div-icon, .carousel .section2 .rotated-div .div-one .div1 .button2 .div-icon .kid-div-icon {
+  width: 30px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  border-radius: 50%;
+}
+.carousel .section2 .rotated-div .div-two .advanced {
+  width: 700px;
+  height: 240px;
+  margin-top: 5px;
+  border-radius: 10px;
+  margin-right: 60px;
+  transform: rotate(8deg);
+  background-color: white;
+  border: 1px solid lightgray;
+}
+.carousel .section2 .rotated-div .div-two .advanced .advanced-child {
+  margin-top: 30px;
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.carousel .section2 .rotated-div .div-two .advanced .advanced-child .button1, .carousel .section2 .rotated-div .div-two .advanced .advanced-child .div-one .div1 .button2, .carousel .section2 .rotated-div .div-one .div1 .div-two .advanced .advanced-child .button2 {
+  border: none;
+  background: transparent;
+}
+.carousel .section2 .rotated-div .div-two .advanced .last-div .btn1 {
+  background: none;
+  border: none;
+}
+.carousel .section2 .rotated-div .div-two .advanced .last-div .btn1 span {
+  margin-bottom: 200px;
+}
+.carousel .section2 .rotated-div .div-two .advanced .last-div .btn1 .div-icon {
+  margin-left: 30px;
+  width: 70px;
+  height: 35px;
+  background: #e25809;
+  border-radius: 30px;
+  position: relative;
+}
+.carousel .section2 .rotated-div .div-two .advanced .last-div .btn1 .div-icon .kid-div-icon {
+  width: 30px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  border-radius: 50%;
+}
+.carousel .section2 .rotated-div .div-two .advanced .last-div .learn-more {
+  margin-left: 310px;
+}
+.carousel .section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 100px;
+  height: 25vh;
+}
+.carousel .section3 .div3 {
+  border-right: 4px solid #ddd;
+}
+.carousel .section3 .section3-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+.carousel .section3 .section3-div .div01 {
+  margin-right: 60px;
+}
+.carousel .section3 .section3-div .div-one {
+  margin-right: -40px;
+}
+.carousel .section3 .section3-div .div1 .div-1 {
+  margin-left: 10px;
+}
+.carousel .section3 .section3-div .div1 .div1-one {
+  width: 180px;
+  height: 120px;
+  background: #f7f6ee;
+  border-radius: 10px;
+  position: relative;
+}
+.carousel .section3 .section3-div .div1 .div1-one .center {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+.carousel .section3 .section3-div .div1 .div1-two {
+  margin-top: 10px;
+  width: 160px;
+  height: 20px;
+  background: #f7f6ee;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.carousel .section3 .section3-div .div1 .div1-three {
+  margin-top: 10px;
+  width: 140px;
+  height: 10px;
+  background: #f7f6ee;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.carousel .section3 .section3-div .div-2 {
+  margin-left: -130px;
+}
+.carousel .section3 .section3-div .div-02 {
+  margin-right: 100px;
+}
+.carousel .section3 .section3-div .div-02 h3 {
+  padding-bottom: 20px;
+  font-size: 1.7rem;
+}
+.carousel .section3 .section3-div .div-two h3 {
+  padding-bottom: 20px;
+  font-size: 1.7rem;
+}
+.carousel .section3 .div2 {
+  margin-left: 30px;
+}/*# sourceMappingURL=main.css.map */
