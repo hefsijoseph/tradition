@@ -13,3 +13,7 @@
 ###  Art and Culture in Focus
 
 
+
+![Image](https://github.com/user-attachments/assets/c603a5c3-77ce-4693-b285-8cd9864b9a4b)
+
+
