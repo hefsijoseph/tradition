@@ -10,7 +10,7 @@
 
 - Festivals: Celebrations like the Bagamoyo Arts Festival and the Mwaka Kogwa festival in Zanzibar showcase the country's lively cultural scene through performances, music, and food.
 
-###  Art and Culture in Focus
+###  Art and Culture in Focus :+1:
 
 
 
