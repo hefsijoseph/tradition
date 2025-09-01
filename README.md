@@ -1,4 +1,4 @@
-# Explore Tradition in Tanzania
+# Explore Specified Tradition in Tanzania
 
 ## The Experience includes different tribe culture
 
