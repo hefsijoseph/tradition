@@ -1,6 +1,6 @@
-# 📂 Explore Specified Tradition in Tanzania
+# :open_file_folder:  Explore Specified Tradition in Tanzania
 
-## 📌 The Experience includes different tribe culture
+## :pushpin: The Experience includes different tribe culture
 
 - Maasai Culture: Known for their distinctive red clothing (shukas), intricate beadwork, and traditional jumping dances.
 
